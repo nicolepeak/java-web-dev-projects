@@ -58,4 +58,12 @@ public class MenuItem {
         isNew = aNew;
     }
 
+    public String toString() {
+        return "Name: " + name + "\n" +
+                "Description: " + description + "\n" +
+                "Price: $" + price + "\n" +
+                "Category: " + category + "\n" +
+                "New?: " + (isNew ? "Yes" : "No");
+    }
+
 }

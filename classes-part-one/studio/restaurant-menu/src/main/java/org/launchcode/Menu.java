@@ -12,12 +12,6 @@ public class Menu {
         this.fullMenu = menuItems;
     }
 
-    public void buildInitialMenu() {
-        //appetizers below:
-        fullMenu.add(new MenuItem("Caprese Salad", "Tomatoes, mozzarella, basil, balsamic glaze", 8.99, "Appetizer", false));
-        fullMenu.add(new MenuItem("Garlic Bread", "Toasted bread with garlic butter", 6.99, "Appetizer", false));
-        fullMenu.add(new MenuItem("Spinach Artichoke Dip", "Creamy dip with spinach, artichokes, and cheese", 9.99, "Appetizer", false));
-    }
 
     public Date getDateUpdated() {
         return dateUpdated;
@@ -44,4 +38,13 @@ public class Menu {
     }
 
 
+    public Date getLastUpdatedDate() {
+        return dateUpdated;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "Current Menu: " + "\n" + fullMenu;
+    }
 }
